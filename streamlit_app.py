@@ -41,4 +41,4 @@ if ingredients_list: # MEANS IF THIS LIST IS NOT NULL
 
 # Display SmoothieFroot nutrition information
 smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
-st.text(smoothiefroot_response)
+st.text(smoothiefroot_response.json())
